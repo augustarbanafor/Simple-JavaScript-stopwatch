@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url('/images/gradient-blue-background-free-vector.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stopwatch-container {
+    width: 50%;
+    height: 250px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.timer {
+    font-size: 3.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.buttons {
+    margin: 0 auto;
+}
+button {
+    width: 2rem;
+    margin: 0 10px;
+}
+#playPauseBtn {
+    background-color: green;
+}
+#play {
+    width: 75%;
+}
+#pause {
+    width: 73%;
+}
+#resetBtn {
+    background-color: red;
+}
+
+/* 
+        
+            MOBILE RESPONSIVENESS 
+                 
+*/
+
+                    /* TABLETS */
+@media screen and (max-width: 600px) {
+    .stopwatch-container {
+        width: 60%
+    }
+    .timer {
+        font-size: 2.5rem;
+    }
+}
+                    /* SMARTPHONES */
+@media screen and (max-width: 375px) {
+    .timer {
+        margin-top: 1.2rem;
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+    button {
+    width: 1.8rem;
+    margin: 0 10px;
+}
+}
